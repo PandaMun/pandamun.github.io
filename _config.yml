@@ -21,7 +21,7 @@ navbar-links:
   Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     - Naver Blog: "https://blog.naver.com/peter5539"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    #- Learn markdown: "https://www.markdowntutorial.com/"
 # Author's home: "https://deanattali.com"
 
 
