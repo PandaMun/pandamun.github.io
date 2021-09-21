@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Security
+title: security
 permalink: category/security
 ---

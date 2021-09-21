@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Data analysis
-permalink: category/dataanalysis
+title: data analysis
+permalink: category/data analysis
 ---

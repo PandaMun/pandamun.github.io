@@ -20,10 +20,10 @@ navbar-links:
   Home: "index.html"
   About Me: "aboutme"
   Category:
-    - Java : "/category/Java"
-    - Security : "/category/Security"
-    - Flask: "category/Flask"
-    - Data analysis: "category/Data analysis"
+    - java : "/category/java"
+    - security : "/category/security"
+    - flask: "category/Flask"
+    - data analysis: "category/data analysis"
     - knowledge : "/category/knowledge"
 
 
