@@ -25,9 +25,9 @@ navbar-links:
     - Flask: "category/flask"
     - Data analysis: "category/dataanalysis"
     - knowledge : "/category/knowledge"
-  Resources:
+  #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Naver Blog: "https://blog.naver.com/peter5539"
+    #- Naver Blog: "https://blog.naver.com/peter5539"
     #- Learn markdown: "https://www.markdowntutorial.com/"
 # Author's home: "https://deanattali.com"
 
