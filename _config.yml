@@ -18,6 +18,7 @@ url: "https://pandamun.github.io/"
 
 navbar-links:
   About Me: "aboutme"
+  Category: "category"
   Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
     - Naver Blog: "https://blog.naver.com/peter5539"
