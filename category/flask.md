@@ -1,5 +1,5 @@
 ---
 layout: category
 title: flask
-permalink: category/Flask
+permalink: category/flask
 ---
