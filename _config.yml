@@ -17,12 +17,13 @@ url: "https://pandamun.github.io/"
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: ""
   About Me: "aboutme"
   Category:
     - Java : "/category/java"
     - Security : "/category/security"
     - Flask: "category/flask"
-    - Data analysis: "category/data analysis"
+    - Data analysis: "category/dataanalysis"
     - knowledge : "/category/knowledge"
   Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -50,8 +51,6 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "ansxogh97@gmail.com"
-  instagram: ho_taee
   github: PandaMun
 #  twitter: daattali
 #  patreon: DeanAttali
