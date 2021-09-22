@@ -17,7 +17,6 @@ url: "https://pandamun.github.io/"
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "index.html"
   About Me: "aboutme"
   Category:
     - java : "/category/java"
