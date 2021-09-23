@@ -9,7 +9,7 @@ subtitle: Let's not think it's impossible even before we start!!
 
 <br><br>
 ## Who
-- Name : Mun_Taeho, PandaMun
+- Name : Mun_Taeho(PandaMun)
 - Job : Student, Studying Computer science at Chosun-University
 - Student majoring in computer science
 - Studying web development and security.
