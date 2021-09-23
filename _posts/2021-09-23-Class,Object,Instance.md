@@ -37,7 +37,7 @@ public class Book {
  }
  //메인함수에 선언된 객체
    public static void main(String[] args){
-     Book littlePrince,ThreeKingdoms; //객체
+     Book littlePrince,harrypotter; //객체
 
  }
 ~~~
@@ -56,10 +56,10 @@ public class Book {
  }
  //메인함수에 선언된 객체
    public static void main(String[] args){
-     Book littlePrince, ThreeKingdoms; //객체
+     Book littlePrince, harrypotter; //객체
 
      //객체를 인스턴스
      littlePrince = new Book(); // littlePrince는 Book클래스의 인스턴스(객체를 메모리에 할당)
-     ThreeKingdoms = new Book(); // ThreeKingdoms는 Book클래스의 인스턴스(객체를 메모리에 할당)
+     harrypotter = new Book(); // harrypotter는 Book클래스의 인스턴스(객체를 메모리에 할당)
    }
  ~~~
