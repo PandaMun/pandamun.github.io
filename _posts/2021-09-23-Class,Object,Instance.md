@@ -58,7 +58,7 @@ public class Book {
    public static void main(String[] args){
      Book littlePrince, harrypotter; //객체
 
-     //객체를 인스턴스
+     //객체 인스턴스화
      littlePrince = new Book(); // littlePrince는 Book클래스의 인스턴스(객체를 메모리에 할당)
      harrypotter = new Book(); // harrypotter는 Book클래스의 인스턴스(객체를 메모리에 할당)
    }
