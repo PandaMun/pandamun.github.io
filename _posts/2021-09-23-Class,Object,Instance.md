@@ -19,12 +19,15 @@ comments: true
 public class Book {
   String title;
   String author;
+  public void read(){...}
 }
 ~~~
 
+- 클래스에 포함되는 title, author과 같은 변수는 속성(property)라고 하며 함수는 메소드(method)라고 합니다.
+
 ### 객체(Object)
- - 클래스에서 정의한것을 토대로 메모리에 할당된것입니다.
- - 프로그램에서 사용되는 데이터 또는 식별자에 의해 참조되는 공간을 의미합니다.
+ - 클래스가 붕어빵을 찍어낼수있는 틀이라면 틀에서 나오는 붕어빵이 객체라고 이해할수 있다.
+ - 하나의 클래스로부터 수많은 객체를 생성할수 있다.
 
 #### 예시
 
