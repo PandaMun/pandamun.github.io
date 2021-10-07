@@ -11,7 +11,7 @@ comments: true
 
 throw는 예외를 강제로 발생시킬때 사용합니다. 예를 들면
 
-```java
+~~~java
 public class test{
 	public static void main(String[] args){
 					try{
@@ -21,9 +21,9 @@ public class test{
 						}
 			}
 }
-```
+~~~
 
-![java.lang.Exception 예외 결과.png](imgs/java.lang.Exception 예외 결과.png)
+![java.lang.Exception 예외 결과.png](/imgs/java.lang.Exception 예외 결과.png)
 
 위의 코드는 메인함수를 들어갈때 throw을 써서 생성한 Exception객체를 강제로 발생시켰습니다.
 
@@ -37,7 +37,7 @@ throws는 발생한 예외를 상위 메소드로 던진다고 생각하시면 �
 
 메소드에서 처리하지 않은 예외를 호출한곳으로 떠넘기는 역활입니다. 예를 들면
 
-```java
+~~~java
 class Test {
     public void test(String a) throws NumberFormatException{
             int sum = Integer.parseInt(a);
@@ -55,7 +55,7 @@ public class Practice {
      }
   }
 }
-```
+~~~
 
 위의 코드는 Test클래스를 별도로 만들어 test 메소드를 작성하였고 throws NumberFormatException을 달았으며 Int형 변수 sum을 생성후 전달받는 문자 a를 parseInt()로 숫자로 변경하여 저장하게 만들었습니다.
 
