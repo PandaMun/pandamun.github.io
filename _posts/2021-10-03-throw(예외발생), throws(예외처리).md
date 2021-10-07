@@ -7,7 +7,7 @@ category: java
 comments: true
 ---
 
-- throw
+##throw
 
 throw는 예외를 강제로 발생시킬때 사용합니다. 예를 들면
 
@@ -24,11 +24,12 @@ public class test{
 
 ~~~
 
+
 위의 코드는 메인함수를 들어갈때 throw을 써서 생성한 Exception객체를 강제로 발생시켰습니다.
 
-Exception이 강제로 발생하였기 때문에 출력결과에서 catch문에서 발생한 예외을 출력하게 됩니다.
+Exception이 강제로 발생하였기 때문에 출력결과에## catch문에서 발생한 예외을 출력하게 됩니다.
 
-- throws
+##throws
 
 throws도 예외를 처리할때 사용하는데요
 
