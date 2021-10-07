@@ -1,6 +1,6 @@
 ---
 layout: post
-title: throw(예외발생) 그리고 throws(예외처리)
+title: throw(예외발생) throws(예외처리)
 subtitle: throws 그리고 throw 키워드에 대해 알아보자
 author: Muntaeho(Pandamun)
 category: java
@@ -19,7 +19,7 @@ public class test{
 				}catch (Exception e){ // 예외 처리 코드
 							System.out.println(e);
 				}
-	 }
+		}
 }
 ~~~
 
