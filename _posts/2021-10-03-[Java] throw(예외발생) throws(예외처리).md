@@ -14,12 +14,12 @@ throw는 예외를 강제로 발생시킬때 사용합니다. 예를 들면
 ~~~java
 public class test{
 	public static void main(String[] args){
-					try{
-							throw new Exception(); // 예외 발생
-						}catch (Exception e){ // 예외 처리 코드
+			try{
+					throw new Exception(); // 예외 발생
+				}catch (Exception e){ // 예외 처리 코드
 							System.out.println(e);
-						}
-			}
+				}
+	 }
 }
 ~~~
 
