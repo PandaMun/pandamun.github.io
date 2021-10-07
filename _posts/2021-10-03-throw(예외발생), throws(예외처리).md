@@ -23,7 +23,7 @@ public class test{
 }
 ~~~
 
-![java.lang.Exception 예외 결과.png](/img/java.lang.Exception 예외 결과.png)
+![java.lang.Exception 예외 결과.png](/_posts/img/java.lang.Exception 예외 결과.png)
 
 위의 코드는 메인함수를 들어갈때 throw을 써서 생성한 Exception객체를 강제로 발생시켰습니다.
 
