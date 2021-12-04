@@ -21,7 +21,7 @@ navbar-links:
   Category:
     - java : "/category/java"
     - security : "/category/security"
-    - flask: "category/flask"
+    - web: "category/web"
     - data analysis: "category/data analysis"
     - knowledge : "/category/knowledge"
 
