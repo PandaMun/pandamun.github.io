@@ -39,7 +39,7 @@ int main(){
 
 a : 1, b : 2
 
-![callbyvalue.png](img/callbyvalue.png)
+![callbyvalue.png](/img/post/callbyvalue.png)
 
 값이 swap되지 않고 그대로 출력되는 이유는 swap함수에서 값을 받아온후에 처리를 한후에 아무것도 넘기지 않기 때문입니다.
 
@@ -72,6 +72,6 @@ int main(){
 
 ```
 
-![callbyreference.png](img/callbyreference.png)
+![callbyreference.png](/img/post/callbyreference.png)
 
 위의 결과물을 보면 Call by reference는 값 대신 주소값을 전달하는 방식이기 때문에 함수가 호출되면 값이 swap 되는걸 확인할수 있습니다.
