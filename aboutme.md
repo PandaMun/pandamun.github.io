@@ -5,7 +5,7 @@ subtitle: Let's not think it's impossible even before we start!!
 ---
 
 
-<p align="center"><img src="/assets/img/panda-icon.png" width="400" alt="프로필 이미지"/></p>
+<p align="center"><img src="/assets/img/panda_aboutme.png" width="400" alt="프로필 이미지"/></p>
 
 <br><br>
 ## Who
