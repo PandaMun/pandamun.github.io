@@ -2,12 +2,10 @@
 layout: post
 title: 클래스, 객체, 인스턴스 무엇인가?
 subtitle: 클래스,객체,인스턴스의 개념과 차이
-author: Muntaeho(Pandamun)
-category: knowledge
-comments: true
+categories: knowledge
 ---
 
-# 클래스, 객체, 인스턴스의 개념
+## 클래스, 객체, 인스턴스의 개념
 
 ### 클래스(Class)
  - 객체 지향 프로그래밍에서 특정 객체를 생성하기 위해 변수와 메소드를 정의하는 일종의 틀입니다.
