@@ -21,8 +21,8 @@ navbar-links:
   Category:
     - java : "/category/java"
     - security : "/category/security"
-    - web: "category/web"
-    - data analysis: "category/data analysis"
+    - web : "category/web"
+    - database : "category/database"
     - knowledge : "/category/knowledge"
 
 
