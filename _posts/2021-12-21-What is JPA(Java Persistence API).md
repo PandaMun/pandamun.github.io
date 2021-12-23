@@ -11,6 +11,7 @@ category: JPA
 - Java Persistence API
 - 자바 진영의 ORM 표준
 
+
 ## ORM?
 
 - Object-relational mapping(객체 관계 매핑)
@@ -19,9 +20,9 @@ category: JPA
 - ORM 프레임워크가 중간에서 객체와 테이블을 매핑하여 패러다임의 불일치를 해결합니다.
 - 대중적인 언어에는 대부분 ORM 기술이 존재
 
+
 ### 패러다임의 불일치
 
----
 
 객체지향 프로그래밍은 추상화, 캡슐화,상속성,다형성 등의 시스템의 복잡성을 제어 할수 있는 다양한 장치들을 제공합니다.
 
@@ -31,11 +32,9 @@ category: JPA
 
 JPA는 이런 패러다임의 불일치 문제를 개발자 대신 해결해준다.
 
----
 
 ## JPA 동작 방식
 
----
 
 애플리케이션과 JDBC 사이에서 동작합니다.
 
@@ -45,9 +44,9 @@ JPA는 이런 패러다임의 불일치 문제를 개발자 대신 해결해준�
 
 JPA가 JDBC API를 사용하여 DATABASE에 SQL을 주고 받는다고 생각하시면 됩니다.
 
+
 ### 객체 저장
 
----
 
 ![JPA_persist.png](/img/post/JPA_persist.png)
 
@@ -57,9 +56,9 @@ jpa.persist(member)
 
 PERSIST 메소드를 사용하여 Entity를 넘겨 받아 Entity 분석, Insert SQL를 생성, JDBC API 사용, 패러다임 불일치를 해결합니다.
 
+
 ### 객체 조회
 
----
 
 ![JPA_find.png](/img/post/JPA_find.png)
 
@@ -71,7 +70,6 @@ find()로 식별자를 넘기면 Member객체를 분석하서 Select SQL을 생�
 
 ### 객체 수정
 
----
 
 ```java
 member.setName(”변경할 이름”)
@@ -81,7 +79,7 @@ member.setName(”변경할 이름”)
 
 ### 객체 삭제
 
----
+
 ```java
 jpa.remove(member)
 ```
@@ -89,7 +87,6 @@ jpa.remove(member)
 
 ### JPA의 성능 최적화 기능
 
----
 
 #### 1차 캐시와 동일성(identity)보장
 - 같은 트렌젝션 안에서는 같은 엔티티를 반환 - 약간의 조회 성능 향상
@@ -108,7 +105,7 @@ jpa.remove(member)
 
 - DB 독립성 레벨이 Read Commit이여도 애플리케이션에서 Repeatable Read 보장
     - DB Isolation level이 높아질수록 성능이 떨어집니다(DB동시성, 직렬성) 3단계에서 2단계로 줄여도 JPA 애플리케이션에서 3단계를 보장해줍니다.
-    - [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io/database/2021/12/21/Database_Isolation_levels.html)
+    - 이해가 안될시 참조할것 : [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io//2021-12-21-Database_Isolation_levels/)
 
 
 #### 트랜젝션을 지원하는 쓰기 지연
@@ -126,7 +123,7 @@ member.persist(MemberC);
 transaction.commit(); // [트랜젝션] 커밋
 // 커밋하는 순간 데이터베이스에 Insert SQL을 모아서 보냅니다.
 ```
-
+ 
 
 - JDBC BATCH SQL 기능을 사용하여 한번에 SQL 전송
     - jpa에 존재하는 hibernate 옵션을 사용하면 JDBC BATCH SQL 기능을 사용하여 여러번의 네트워크가 아닌 한 네트워크에 SQL을 모아서 보내게 됩니다. 그후 커밋을 하게 됩니다.
