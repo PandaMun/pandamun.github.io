@@ -86,11 +86,6 @@ member.setName(”변경할 이름”)
 jpa.remove(member)
 ```
 
-### JPA 소개
-
----
-
-jpa의 영속성 컨텍스트?
 
 ### JPA의 성능 최적화 기능
 
@@ -113,8 +108,7 @@ jpa의 영속성 컨텍스트?
 
 - DB 독립성 레벨이 Read Commit이여도 애플리케이션에서 Repeatable Read 보장
     - DB Isolation level이 높아질수록 성능이 떨어집니다(DB동시성, 직렬성) 3단계에서 2단계로 줄여도 JPA 애플리케이션에서 3단계를 보장해줍니다.
-
-          이해가 안된다면 아래의 내용을 참조할것
+    - 이해가 안된다면 아래의 내용을 참조할것
 
     [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io/database/2021/12/21/Database_Isolation_levels.html)
 
