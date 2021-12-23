@@ -69,17 +69,20 @@ Member member = jpa.find(memberId)
 
 find()로 식별자를 넘기면 Member객체를 분석하서 Select SQL을 생성, DB에서 가져온 결과를 객체로 만들어 반환, 패러다임의 불일치를 해결합니다.
 
-객체 수정
+### 객체 수정
 
-```jsx
+---
+
+```java
 member.setName(”변경할 이름”)
 ```
 
 트랜젝션 안에서만 데이터를 수정하면 데이터를 커밋하는 시점에서 자동으로 변경한 점을 찾아 업데이트 쿼리가 발생합니다.
 
-객체 삭제
+### 객체 삭제
 
-```jsx
+---
+```java
 jpa.remove(member)
 ```
 
@@ -93,19 +96,20 @@ jpa의 영속성 컨텍스트?
 
 ---
 
-1. 1차 캐시와 동일성(identity)보장
+#### 1차 캐시와 동일성(identity)보장
 - 같은 트렌젝션 안에서는 같은 엔티티를 반환 - 약간의 조회 성능 향상
     - 같은 트랜젝션 안에서 똑같은 식별자를 조회할시 첫번쨰는 쿼리가 발생하지만 두번쨰는 jpa안의 캐시에서 값을 가지고 옴
 
+
     ```java
     String memberId = "100";
-    Member m1 =jpa.find(Member.class, memberId); // SQL
+    Member m1 =jpa.find(Member.class, memberId); // SQL 1번만 실행
     Member m2 =jpa.find(Member.class, memberId); // 캐시
 
     println(m1 == m2) // true
     ```
 
-                                                                      SQL 1번만 실행
+
 
 - DB 독립성 레벨이 Read Commit이여도 애플리케이션에서 Repeatable Read 보장
     - DB Isolation level이 높아질수록 성능이 떨어집니다(DB동시성, 직렬성) 3단계에서 2단계로 줄여도 JPA 애플리케이션에서 3단계를 보장해줍니다.
@@ -115,8 +119,9 @@ jpa의 영속성 컨텍스트?
     [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io/database/2021/12/21/Database_Isolation_levels.html)
 
 
-1. 트랜젝션을 지원하는 쓰기 지연
+#### 트랜젝션을 지원하는 쓰기 지연
 - 트랜젝션을 커밋할 때까지 Insert SQL을 모음
+
 
 ```java
 transaction.begin(); // [트랜잭션] 시작
@@ -130,10 +135,12 @@ transaction.commit(); // [트랜젝션] 커밋
 // 커밋하는 순간 데이터베이스에 Insert SQL을 모아서 보냅니다.
 ```
 
+
 - JDBC BATCH SQL 기능을 사용하여 한번에 SQL 전송
     - jpa에 존재하는 hibernate 옵션을 사용하면 JDBC BATCH SQL 기능을 사용하여 여러번의 네트워크가 아닌 한 네트워크에 SQL을 모아서 보내게 됩니다. 그후 커밋을 하게 됩니다.
 - UPDATE, DELETE로 인한 로우(ROW)락 시간 최소화
 - 트랜젝션 커밋시 UPDATE, DELETE SQL을 실행하고 바로 커밋
+
 
 ```java
 transaction.begin(); // [트랜잭션] 시작
@@ -146,9 +153,11 @@ transaction.commit(); // [트랜젝션] 커밋
 // 커밋하는 순간 데이터베이스에서 UPDATE,DELETE SQL을 보내게 됩니다.
 ```
 
-1. 지연 로딩
+
+#### 지연 로딩
 - 지연 로딩
     - 엔티티가 실제 사용될때 로딩합니다.
+
 
 ```java
 Member member = memberDAO.find(memberId);// SELECT * FROM MEMBER
@@ -156,14 +165,17 @@ Team team = member.getTeam();
 String teamName = tema.getName(); // 실제로 조회할때 가져온다. SELECT * FROM TEAM
 ```
 
+
 - 즉시로딩
     - JOIN SQL로 한번에 연관된 엔티티까지 미리 조회
     - 즉시 로딩을 사용할시 예상치 못한 SQL이 발생할수 있다.
+
 
 ```java
 Member member = memberDAO.find(memberId);// SELECT M.*, T.* FROM MEMBER JOIN TEAM..
 Team team = member.getTeam();
 String teamName = tema.getName();
 ```
+
 
 JPA에서는 지연로딩과 즉시로딩을 모두 지원합니다.
