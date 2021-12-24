@@ -2,7 +2,7 @@
 layout: post
 title: JPA(Java Persistence API)란?
 subtitle: 객체와 RDB을 맵핑하는 기술인 JPA(ORM)에 대해서 알아보자
-category: JPA
+category: jpa
 ---
 
 
@@ -123,7 +123,7 @@ member.persist(MemberC);
 transaction.commit(); // [트랜젝션] 커밋
 // 커밋하는 순간 데이터베이스에 Insert SQL을 모아서 보냅니다.
 ```
- 
+
 
 - JDBC BATCH SQL 기능을 사용하여 한번에 SQL 전송
     - jpa에 존재하는 hibernate 옵션을 사용하면 JDBC BATCH SQL 기능을 사용하여 여러번의 네트워크가 아닌 한 네트워크에 SQL을 모아서 보내게 됩니다. 그후 커밋을 하게 됩니다.

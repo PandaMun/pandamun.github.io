@@ -23,6 +23,7 @@ navbar-links:
     - security : "/category/security"
     - web : "category/web"
     - database : "category/database"
+    - jpa : "category/jpa"
     - knowledge : "/category/knowledge"
 
 
