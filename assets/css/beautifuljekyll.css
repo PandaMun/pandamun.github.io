@@ -858,104 +858,77 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 /* --- Tables --- */
 
 table {
-    padding: 0;
+  padding: 0;
 }
 table tr {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+  border-top: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 table tr th {
-    font-weight: bold;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 0.375rem 0.8125rem;
 }
 table tr td {
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 0.375rem 0.8125rem;
 }
 table tr th :first-child,
 table tr td :first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 table tr th :last-child,
 table tr td :last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 
 /* --- Code blocks --- */
 
-code {
-  padding: 0.125rem 0.25rem;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 0.25rem;
-}
-
-pre code {
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-}
-
 pre {
-  font-size: 0.875rem;
-  line-height: 1.5em;
-  border-radius: 0.25rem;
-  padding: 0.59375rem;
+    font-size: 16px;
+    line-height: 1.5em;
 }
-.highlight pre {
-  border: none;
-  background: none;
-  margin: 0;
+pre code {
+    white-space: pre;
+}
+pre.highlight, .highlight > pre, td.code pre {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
+    background-repeat: repeat;
+    background-size: 3em 3em;
+    background-position: 0px 10px;
+    border-left: 7px solid #444;
+}
+code table, code table td, code table th, code table tbody, code table tr,
+td.gutter pre {
+    padding: 0;
+    border: none;
+    background-color: #fff;
 }
 .highlight > pre {
-  background-image: linear-gradient(
-    rgba(0,0,0,0.03), rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.02) 1.5em, rgba(0,0,0,0.02) 3em);
-  background-size: auto 3em;
-  background-position-y: 0.625rem;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-left: 0.4375rem solid #444;
+    padding: 0;
 }
-.highlight > pre:not([class~="highlight"]) { /* code block with line number */
-  padding: 0;
+.highlight > pre.highlight {
+    padding: 9.5px;
 }
-.highlight table,
-.highlight tr,
-.highlight td { /* to be removed after fixing table styles */
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
+td.code pre {
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    border-color: #444;
+    border-radius: 0;
 }
-.highlight pre.lineno {
-  color: rgba(0,0,0,0.3);
-  border-radius: 0;
-  border-right: 2px solid #444;
-}
-
-/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-.lineno {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.lineno::selection, .lineno::-moz-selection {
-  background: none;
-}
-
-/* Fix table border github gist snippets */
-
-.gist, .gist-file table tr {
-  border: unset;
-}
-
-.gist, .gist-file table tr td {
-  border: unset;
+td.gutter {
+    padding-top: 3px;
 }
 
 /* --- Social media sharing section --- */
