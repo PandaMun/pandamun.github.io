@@ -10,6 +10,7 @@ category: jpa
 
 ## 회원 테이블
 
+
 ```sql
 CREATE TABLE MEMBER (
 		ID VARCHAR(255) NOT NULL,
@@ -19,7 +20,9 @@ CREATE TABLE MEMBER (
 )
 ```
 
+
 ## 맵핑전 기존 회원 클래스
+
 
 ```java
 @Getter
@@ -32,6 +35,7 @@ public class Member{
 }
 ```
 
+
 Mapping 정보
 
 | 매핑 정보 | 회원 객체 | 회원 테이블 |
@@ -42,6 +46,7 @@ Mapping 정보
 | 필드와 컬럼 | age | AGE |
 
 ## 어노테이션을 활용하여 매핑정보를 표현한 회원 클래스
+
 
 ```java
 
@@ -61,6 +66,7 @@ public class Member {
 		private Integer age;
 }
 ```
+
 
 ### @Entity
 
