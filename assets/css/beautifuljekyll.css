@@ -1,3 +1,16 @@
+---
+layout: null
+---
+
+@import url("pygment_highlights.css");
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+/* --- General --- */
+
+html {
+  font-size: 100%
+}
+
 body {
     font-family: 'Nanum Gothic';
     font-size: 16px;
