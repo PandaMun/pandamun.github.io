@@ -110,6 +110,7 @@ JPA는 persistence.xml을 사용하여 필요한 설정 정보를 관리합니�
 	</persistence-unit>
 ```
 
+
 ```xml
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
 	version="2.1">
