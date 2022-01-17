@@ -66,14 +66,14 @@ ALTER TABLE (테이블명) AUTO_INCREMENT = (새로 시작할 시퀀스 번호);
 
 ![AUTO_INCREMENT_03.png](/img/post/AUTO_INCREMENT_03.png)
 
-아래와 같이 처리해줍니다.
+아래와 @CNT를 0으로 설정한후 UPDATE문으로 컬럼을 재정렬합니다.
 
 ```sql
 SET @CNT = 0;
 UPDATE USER SET id = @CNT:=@CNT+1;
 ```
 
-하게된다면 아래와 같이 순서대로 정렬된것을 볼수 있습니다.
+아래와 같이 순서대로 정렬된것을 볼수 있습니다.
 
 ![AUTO_INCREMENT_04.png](/img/post/AUTO_INCREMENT_04.png)
 
