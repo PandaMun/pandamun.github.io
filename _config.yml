@@ -21,10 +21,11 @@ navbar-links:
   Category:
     - java : "/category/java"
     - security : "/category/security"
-    - web : "category/web"
-    - database : "category/database"
-    - jpa : "category/jpa"
+    - web : "/category/web"
+    - database : "/category/database"
+    - jpa : "/category/jpa"
     - knowledge : "/category/knowledge"
+    - algorithm : "/category/algorithm"
 
 
 # --- Logo --- #
