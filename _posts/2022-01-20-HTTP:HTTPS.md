@@ -45,6 +45,8 @@ category: knowledge
 - Blank Line : 헤더의 끝을 의미함
 - HTTP Body : Request와 동일함
 
+![HTTP_HEADER.png](/img/post/HTTP_HEADER.png)
+
 ### HTTP의 단점
 
 암호화 되지 않는 평문 통신이기 때문에 패킷을 탈취당할수 있으며 변조 가능성이 높습니다.
