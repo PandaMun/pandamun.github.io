@@ -8,7 +8,9 @@ category: knowledge
 
 ## Web Server
 
-HTTP를 통해 웹 브라우저에서 요청하는 HTML, Image 등을 전송해주는 서비스 프로그램을 말합니다;.
+![web_server.png](/img/post/web_server.png)
+
+HTTP를 통해 웹 브라우저에서 요청하는 HTML, Image 등을 전송해주는 서비스 프로그램을 말합니다.
 
 - 하드웨어 측면
     - 웹서버의 소프트웨어와 컴포넌트 파일(데이터)들을 저장하는 컴퓨터
@@ -26,6 +28,9 @@ HTTP를 통해 웹 브라우저에서 요청하는 HTML, Image 등을 전송해
 
 ## WAS(Web Application Server)
 
+![web_application_server.png](/img/post/web_application_server.png)
+
+
 HTTP를 통해 웹서버가 요청을 받으면 애플리케이션 대한 로직을 수행하여 웹서버로 반환해주는 소프트웨어입니다.
 
 웹서버와 DMBS 사이에서 동작하는 미들웨어로써 컨테이너 기반으로 동작합니다.
@@ -34,3 +39,19 @@ HTTP를 통해 웹서버가 요청을 받으면 애플리케이션 대한 로직
 
 - WAS 는 Web Server와 Web Container 로 이루어져있습니다.(WAS = Web Server + Web Container)
 - WAS가 가지고있는 Web Server도 정적인 컨텐츠를 처리하는데 큰 성능 차이는 없습니다.
+
+그럼에도 불구하고 WAS와 Web Server를 따로 분리하여 사용하는 이유가 무엇인가?
+
+### Web Sever & WAS 분리 이유
+
+
+![web_server&was.png](/img/post/web_server&was.png)
+
+
+1. WAS와 Web Sever의 역할을 나눠 부하를 방지합니다.
+    - WAS가 혼자 모든 요청을 처리할수 있지만 WAS의 부담이 커지게 됩니다. 그래서 기능을 분리하여 부하를 줄일수 있도록 Web Server와 WAS를 분리합니다.
+2. 물리적으로 분리하여 보안을 강화합니다.
+    - 클라이언트가 바로 WAS로 붙으면 뒤에 있는 Database 정보를 쉽게 알수 있게 됩니다.
+    - Web Server를 WAS 앞단에 배치하여 데이터 리소스를 안전하게 보호할수 있습니다.
+3. Web server에 여러대의 WAS를 연결할수 있습니다.
+- 규모가 큰 서비스에서는 하나의 웹서버에 여러개의 WAS를 두어 처리하는 요청을 배분하여 안정적인 서비스를 운영할수 있게 합니다.
