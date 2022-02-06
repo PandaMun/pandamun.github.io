@@ -6,11 +6,11 @@ category: web
 ---
 
 
-### Servlet
+## Servlet
 
 Servlet은 server, 운영 체제 및 하드웨어를 다루는 대부분의 작업을 수행하는 일종의 환경 내에서 호스팅되는 응용 프로그램을 의미하는 applet, 두 단어의 합성어로써 자바를 이용하여 웹에서 실행되는 프로그램을 작성하는 기술을 말합니다.
 
-### Servlet의 특징
+## Servlet의 특징
 
 - 클라이언트가 URL을 입력하면 HTTP Request가 Servlet Container로 전송합니다.
 - Servlet 또한 자바 프로그램의 다른 클래스들처럼 JVM에서 동작해야 하므로 클래스 파일이 생성되어야 합니다.
@@ -18,7 +18,7 @@ Servlet은 server, 운영 체제 및 하드웨어를 다루는 대부분의 작�
 - 브라우저를 통해 자바 클래스가 실행되도록 하기 위해서는 javax.servlet.http 패키지에서 제공하는 HttpServlet 클래스를 상속받아 구현해야 합니다.
 - MVC 패턴에서 Controller로 이용됩니다.
 
-### Servlet의 동작 과정
+## Servlet의 동작 과정
 
 ![ProcessofServlet.png.png](/img/post/ProcessofServlet.png)
 
@@ -32,7 +32,7 @@ Servlet은 server, 운영 체제 및 하드웨어를 다루는 대부분의 작�
 
 ### 서블릿 인스턴스는 하나만 생성되어 웹 애플리케이션이 종료될때까지 사용됩니다.
 
-### Servlet LifeCycle
+## Servlet LifeCycle
 
 다른 웹 기술들은 클라이언트들의 요청이 있을때마다 작업을 처음부터 새롭게 하여 제공하지만, 서블릿은 그렇지 않습니다.                                                                                                                                                                     서블릿이 첫번째 요청인 경우에는 서블릿 클래스를 찾아 메모리에 로딩하여 인스턴스를 생성합니다. 이때 생성된 서블릿 인스턴스는 메모리에 계속 남아 있게 되므로 이후부터는 서블릿이 호출되어도  서블릿 인스턴스가 다시 생성되지 않고 이미 메모리에 로딩된 서블릿으로부터 서비스만 받기 때문에 수행 속도가 빠릅니다.
 
