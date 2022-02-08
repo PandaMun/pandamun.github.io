@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (JAVA) ThreadLocal
+title: (JAVA)ThreadLocal
 subtitle: 자바의 ThreadLocal 대해 알아보자
 category: java
 ---
