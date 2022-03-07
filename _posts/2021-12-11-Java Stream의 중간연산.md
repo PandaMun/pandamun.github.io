@@ -21,8 +21,12 @@ Stream<T> skip(long n)
 예제
 
 ```java
+//1
 IntStream stream = Intstream.rangeClose(1,5);//12345
 stream.skip(2).forEach(System.out::print); // 345
+//2
+Stream<String> stream = Arrays.stream(new String[]{"apple","banana","cat","dog"});
+stream.skip(2).forEach(System.out::println); //cat dog
 ```
 
 ## limit()
@@ -36,8 +40,12 @@ Stream<T> limit(long maxSize)
 예제
 
 ```java
+//1
 IntStream stream = Intstream.rangeClose(1,5);//12345
 stream.limit(3).forEach(System.out::print); // 123
+//2
+Stream<String> stream = Arrays.stream(new String[]{"apple","banana","cat","dog"});
+stream.limit(2).forEach(System.out::println); //apple banana
 ```
 
 ## filter()
@@ -49,8 +57,11 @@ Stream<T> filter(Predicate<? super T> predicate)
 ```
 
 ```java
+//1
 IntStream stream = Intstream.rangeClose(1,5);//12345
 stream.filter(i -> i >= 3).forEach(System.out::print); //345
+//2
+
 ```
 
 ## distinct()
@@ -78,7 +89,14 @@ Stream<T> sorted()
 Stream<T> sorted(Comparator<? super T> comparator)
 ```
 
-- comparator
+- sorted 메소드는 지정된 Comparator로 스트림을 정렬합니다. 하지만 Comparator 대신 람다식을 사용하는것이 가능합니다. Comparator을 지정하지 않는다면 스트림 기본 정렬 기준(Comparable)으로 정렬합니다.
+
+예제코드
+
+```java
+Stream<String> stream = Arrays.stream(new String[]{"cat","banana","apple","dog"});
+stream.sorted().forEach(System.out::println); //apple banana cat dog
+```
 
 ## map()
 
@@ -91,14 +109,46 @@ Stream<R> map(Function<? super T, ? extends R> mapper)
 예제
 
 ```java
-IntStream stream = IntStream.of(1,2,3,4,5);
-
+Stream<String> stream = Arrays.stream(new String[]{"apple","banana","cat","dog"});
+stream.map(i -> i.toUpperCase()).forEach(System.out::println); // 대문자로 변환
+//APPLE BANANA CAT DOG
 ```
 
 ## peek()
 
-peek 메소드는 연산과 연산 사이에 처리된 스트림내 요소를 확인할때 사용하며 원래 스트림의 요소를 소모하지 않기 때문에 중간에 결과를 확인할때 유용하게 사용됩니다.
+peek 메소드는 연산과 연산 사이에 처리된 스트림내 요소를 확인할때 사용하며 원래 스트림의 요소를 소모하지 않기 때문에 중간에 결과를 확인할때 유용하게 사용됩니다.(미리보기)
+
+```java
+Stream<String> stream = Arrays.stream(new String[]{"cat","banana","apple","dog"});
+stream.map(i -> i.toUpperCase()).peek(i -> System.out.println("변환후 : " + i))
+.forEach(System.out::println);
+//변환후 : APPLE
+//APPLE
+//변환후 : BANANA
+//BANANA
+//변환후 : CAT
+//CAT
+//변환후 : DOG
+//DOG
+```
+
+위코드에서 알수 있는접은 peek 연산은 단말연산(forEach)이 수행되지 않으면 실행이 되지 않는다는걸 알수 있습니다.
 
 ## flatMap()
 
-flatMap 메소드는 스트림의 요소가 배열일경우 즉 중첩된 구조를 가진 스트림을 단일 구조 스트림으로 만들어 줍니다.
+flatMap 메소드는 Array나 Object로 감싸져 있는 모든 원소를 단일 원소 스트림으로 반환합니다.
+
+![flatMap.png](/img/post/flatMap.png)
+
+```java
+String[][] arrs = new String[][]{
+        {"Laptop", "Phone"}, {"Mouse", "Keyboard"}
+};
+
+List<String> arrstream = Arrays.stream(arrs)
+        .flatMap(arr -> Arrays.stream(arr))
+        .collect(Collectors.toList());
+
+System.out.println(arrstream);
+//[Laptop, Phone, Mouse, Keyboard]
+```
