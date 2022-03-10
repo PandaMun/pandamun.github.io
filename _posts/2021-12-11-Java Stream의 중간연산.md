@@ -4,6 +4,16 @@ title: (JAVA) Stream의 중간연산
 subtitle: Java8에서부터 지원하는 기술인 Stream의 중간연산을 알아보자
 category: java
 ---
+
+# Java Stream 정리
+
+- [Stream의 정의와 특징](https://pandamun.github.io/2021-12-09-Java-Stream%EC%9D%98-%ED%8A%B9%EC%A7%95/)
+- [Stream 생성방법](https://pandamun.github.io/2021-12-10-Java-Stream-%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95/)
+- Stream 중간연산
+- [Stream 최종연산](https://pandamun.github.io/2021-12-12-Java-Stream%EC%9D%98-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0/)
+
+---
+
 생성된 스트림을 필터링하거나 원하는 형태로 가공하는 연산입니다.                                                   
 
 중간 연산의 특징중 하나로 중간 연산의 결과값은 스트림을 반환하기 때문에 이어서 호출하는 메소드 체이닝이 가능합니다.                                            

@@ -4,6 +4,16 @@ title: (JAVA) Stream 생성방법
 subtitle: Java8에서부터 지원하는 기술인 Stream를 생성해보자
 category: java
 ---
+
+# Java Stream 정리
+
+- [Stream의 정의와 특징](https://pandamun.github.io/2021-12-09-Java-Stream%EC%9D%98-%ED%8A%B9%EC%A7%95/)
+- Stream 생성방법
+- [Stream 중간연산](https://pandamun.github.io/2021-12-11-Java-Stream%EC%9D%98-%EC%A4%91%EA%B0%84%EC%97%B0%EC%82%B0/)
+- [Stream 최종연산](https://pandamun.github.io/2021-12-12-Java-Stream%EC%9D%98-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0/)
+
+---
+
 기본적으로 스트림 API는 컬렉션, 배열, 파일, 비어있는 스트림등 다양한 데이터 소스에서 생성이 가능합니다.
 
 ### 컬렉션(Collection)

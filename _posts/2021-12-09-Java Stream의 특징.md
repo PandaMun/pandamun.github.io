@@ -4,6 +4,16 @@ title: (JAVA) Stream의 특징
 subtitle: Java8에서부터 지원하는 기술인 Stream에 대해 알아보자
 category: java
 ---
+
+# Java Stream 정리
+
+- Stream의 정의와 특징
+- [Stream 생성방법](https://pandamun.github.io/2021-12-10-Java-Stream-%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95/)
+- [Stream 중간연산](https://pandamun.github.io/2021-12-11-Java-Stream%EC%9D%98-%EC%A4%91%EA%B0%84%EC%97%B0%EC%82%B0/)
+- [Stream 최종연산](https://pandamun.github.io/2021-12-12-Java-Stream%EC%9D%98-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0/)
+
+---
+
 ## Stream?
 
 Java8에서 부터 지원하는 Stream은 다양한 데이터 소스 즉 배열이나 컬렉션(List, Map,Set)으로 원하는 값을 얻을때 요소들을 하나씩 참조하면서 반복적인 처리를 할수 있게 합니다. 그렇게 되면 복잡한 로직이나 코드를 가진 경우에 불필요한 for이나 if문들을 쓰지 않고 깔끔하게 처리가능하게 됩니다.
