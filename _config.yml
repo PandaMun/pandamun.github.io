@@ -20,12 +20,13 @@ navbar-links:
   About Me: "aboutme"
   Category:
     - java : "/category/java"
-    - security : "/category/security"
     - web : "/category/web"
-    - database : "/category/database"
     - jpa : "/category/jpa"
-    - knowledge : "/category/knowledge"
+    - database : "/category/database"
+    - os : "/category/os"
     - algorithm : "/category/algorithm"
+    - security : "/category/security"
+    - knowledge : "/category/knowledge"
 
 
 # --- Logo --- #
