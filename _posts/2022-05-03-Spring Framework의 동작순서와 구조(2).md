@@ -74,7 +74,7 @@ protected void render(ModelAndView mv, HttpServletRequest request,
 		}
 ```
 
-![스크린샷 2022-05-01 오후 10.13.18.png](Spring%20MVC%20%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9%202cb2acf51d3c459f924d6012af710463/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-05-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.13.18.png)
+![SpringMVC.png](/img/post/SpringMVC.png))
 
 **동작순서**
 
@@ -181,27 +181,18 @@ suffix : ".jsp"
           }
 ```
 
-**핸들러 어댑터 호출**
-
-  핸들러 어댑터를 통해 new-form 이라는 논리 뷰 이름을 획득한다.
-
-**ViewResolver 호출**
-
-- new-form 이라는 뷰 이름으로 viewResolver를 순서대로 호출한다.
-- BeanNameViewResolver 는 new-form 이라는 이름의 스프링 빈으로 등록된 뷰를 찾아야 하는데 없다.
-- InternalResourceViewResolver 가 호출된다.
-
-**InternalResourceViewResolver**
-
-- 이 뷰 리졸버는 InternalResourceView 를 반환한다.
-
-**뷰 - InternalResourceView**
-
-- InternalResourceView 는 JSP처럼 포워드 forward() 를 호출해서 처리할 수 있는 경우에 사용한다.
-
-**view.render()**
-
-- view.render() 가 호출되고 InternalResourceView 는 forward() 를 사용해서 JSP를 실행한다.
+1. 핸들러 어댑터 호출
+    1. 핸들러 어댑터를 통해 new-form 이라는 논리 뷰 이름을 획득한다.
+2. ViewResolver 호출
+    1. new-form 이라는 뷰 이름으로 viewResolver를 순서대로 호출한다.
+    2. BeanNameViewResolver 는 new-form 이라는 이름의 스프링 빈으로 등록된 뷰를 찾아야 하는데 없다.
+    3. InternalResourceViewResolver 가 호출된다.
+3. InternalResourceViewResolver
+    1. 이 뷰 리졸버는 InternalResourceView 를 반환한다.
+4. 뷰 - InternalResourceView
+    1. InternalResourceView 는 JSP처럼 포워드 forward() 를 호출해서 처리할 수 있는 경우에 사용한다.
+5. view.render()
+    1. view.render() 가 호출되고 InternalResourceView 는 forward() 를 사용해서 JSP를 실행한다.
 
 **참고**
 
