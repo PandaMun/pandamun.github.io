@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spring Framework의 동작순서와 구조
-subtitle: Spring Framework의 동작순서와 구조
+title: Spring Framework의 동작순서와 구조(1)
+subtitle: Spring Framework의 동작순서와 구조(1)
 category: web
 ---
 
