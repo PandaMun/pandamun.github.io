@@ -181,25 +181,25 @@ suffix : ".jsp"
           }
 ```
 
-1. 핸들러 어댑터 호출
+**핸들러 어댑터 호출**
 
-핸들러 어댑터를 통해 new-form 이라는 논리 뷰 이름을 획득한다.
+  핸들러 어댑터를 통해 new-form 이라는 논리 뷰 이름을 획득한다.
 
-2. ViewResolver 호출
+**ViewResolver 호출**
 
 - new-form 이라는 뷰 이름으로 viewResolver를 순서대로 호출한다.
 - BeanNameViewResolver 는 new-form 이라는 이름의 스프링 빈으로 등록된 뷰를 찾아야 하는데 없다.
 - InternalResourceViewResolver 가 호출된다.
 
-3. InternalResourceViewResolver
+**InternalResourceViewResolver**
 
 - 이 뷰 리졸버는 InternalResourceView 를 반환한다.
 
-4. 뷰 - InternalResourceView
+**뷰 - InternalResourceView**
 
 - InternalResourceView 는 JSP처럼 포워드 forward() 를 호출해서 처리할 수 있는 경우에 사용한다.
 
-5. view.render()
+**view.render()**
 
 - view.render() 가 호출되고 InternalResourceView 는 forward() 를 사용해서 JSP를 실행한다.
 
