@@ -210,5 +210,5 @@ Thymeleaf 뷰 템플릿을 사용하면 ThymeleafViewResolver 를 등록해야 �
 - [스프링 MVC 1편 - 김영한](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1)
 
 ### 목차
-- [Spring Framework의 동작순서와 구조(1)][https://pandamun.github.io/2022-03-21-Spring-Framework%EC%9D%98-%EB%8F%99%EC%9E%91%EC%88%9C%EC%84%9C%EC%99%80-%EA%B5%AC%EC%A1%B0(1)/]
+- [Spring Framework의 동작순서와 구조(1)](https://pandamun.github.io/2022-03-21-Spring-Framework%EC%9D%98-%EB%8F%99%EC%9E%91%EC%88%9C%EC%84%9C%EC%99%80-%EA%B5%AC%EC%A1%B0(1)/)
 - Spring Framework의 동작순서와 구조(2)
