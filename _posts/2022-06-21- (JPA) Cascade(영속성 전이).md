@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [JPA] CASCADE(영속성 전이)
+title: JPA CASCADE(영속성 전이)
 subtitle: CASCADE란 무엇인가? 그리고 CascadeType 종류에 대해서 알아보자
 categories: JPA
 ---
