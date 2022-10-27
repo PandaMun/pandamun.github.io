@@ -78,8 +78,7 @@ public class Board{
 	private String content;
 	private String writer;
 
-	public static Board createBoard(String subject,
-																		String content, String writer){
+	public static Board createBoard(String subject, String content, String writer){
 		Board board = new Board();
 		board.setSubject(subject);
 		board.setContent(content);
