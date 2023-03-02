@@ -27,6 +27,7 @@ navbar-links:
     - algorithm : "/category/algorithm"
     - security : "/category/security"
     - knowledge : "/category/knowledge"
+    - etc : "/category/etc"
 
 
 # --- Logo --- #
