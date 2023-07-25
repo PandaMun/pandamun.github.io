@@ -169,7 +169,7 @@ Advice가 적용될 위치 또는 끼어들수 있는 시점을 의미하며 Joi
     }
     ```
 
-    1. 그후 해당 어노테이션을 범위로 하는 Advice 코드를 작성합니다.
+    2. 그후 해당 어노테이션을 범위로 하는 Advice 코드를 작성합니다.
 
     ```java
     @Aspect
@@ -193,7 +193,7 @@ Advice가 적용될 위치 또는 끼어들수 있는 시점을 의미하며 Joi
 
     해당 메서드내에서 대상 메서드를 호출하는 코드는 ProceedingJoinPoint 인터페이스의 proceed() 메서드를 호출하여 수행합니다.
 
-    1. 시간 측정을 원하는 대상 메서드를 작성하여 적용합니다.
+    3. 시간 측정을 원하는 대상 메서드를 작성하여 적용합니다.
 
     ```java
     @Service
@@ -229,4 +229,5 @@ Advice가 적용될 위치 또는 끼어들수 있는 시점을 의미하며 Joi
 
 
 ### Reference
-  - [망나니 개발자 블로그](https://mangkyu.tistory.com/175)
+  - [망나니 개발자 블로그](https://devinside.tistory.com/74)
+ akd(https://mangkyu.tistory.com/175)
