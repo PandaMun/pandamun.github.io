@@ -222,9 +222,6 @@ Advice가 적용될 위치 또는 끼어들수 있는 시점을 의미하며 Joi
     - 특정 파라미터 타입을 가지는 대상 메서드를 지정하여 어드바이스를 적용할 때 사용하는 Pointcut 표현식입니다.
 5. Combination Pointcut 표현식
     - 여러 Pointcut 표현식을 조합하여 복잡한 대상을 지정할 수 있습니다.
-    - '&&': AND
-    - '||':  OR
-    - '!':  NOT
 
 
 ### Reference
