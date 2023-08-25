@@ -7,11 +7,10 @@ category: java
 
 # Java Stream 정리
 
-- [Stream의 정의와 특징](https://pandamun.github.io/2021-12-09-Java-Stream%EC%9D%98-%ED%8A%B9%EC%A7%95/)
-- [Stream 생성방법](https://pandamun.github.io/2021-12-10-Java-Stream-%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95/)
+- [Stream의 정의와 특징](https://pandamun.github.io/post/feature-of-java-stream)
+- [Stream 생성방법](https://pandamun.github.io/post/how-to-create-java-stream)
 - Stream 중간연산
-- [Stream 최종연산](https://pandamun.github.io/2021-12-12-Java-Stream%EC%9D%98-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0/)
-
+- [Stream 최종연산](https://pandamun.github.io/post/java-stream-final-operations)
 ---
 
 생성된 스트림을 필터링하거나 원하는 형태로 가공하는 연산입니다.                                                   
