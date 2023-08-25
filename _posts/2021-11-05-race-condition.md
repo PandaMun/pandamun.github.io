@@ -85,4 +85,4 @@ category: os
 그리고 프로세스에서 수행하는 내용과 프로세스가 생성하는 결과는, 다른 동시 프로세스의 실행 속도와 무관, 즉 기능과 결과는 서로 독립적이어야 한다.
 
 ## 해결방안
-- [Semaphore, Mutex](https://pandamun.github.io/2021-07-23-Mutex,-Semaphore/)
+- [Semaphore, Mutex](https://pandamun.github.io/post/mutex-semaphore)
