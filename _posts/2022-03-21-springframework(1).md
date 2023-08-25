@@ -17,9 +17,9 @@ Spring 프레임워크를 사용하여 개발하던중 Spring의 동작순서와
 
 세부적인 특징으로는 아래와 같습니다.
 
-- [IoC(Inversion of Control)](https://pandamun.github.io//2022-02-21-IoC(Inversion-of-Control)/) 제어의 반전을 지원한다.
+- [IoC(Inversion of Control)](https://pandamun.github.io/post/IoC(Inversion-of-Control)) 제어의 반전을 지원한다.
     - 객체나 메소드의 생명주기를 컨테이너가 관리해주는것
-- [DI(Dependency Injection)](https://pandamun.github.io//2022-02-21-IoC(Inversion-of-Control)/) 의존성 주입을 지원한다.
+- [DI(Dependency Injection)](https://pandamun.github.io/post/IoC(Inversion-of-Control)) 의존성 주입을 지원한다.
 - AOP(Aspect Oriented Programming) 관점지향 프로그래밍을 지원한다,.
     - 트랜젝션이나 로깅 보안과 같이 핵심적인 로직과는 관계가 없으나 여러 모듈에서 공통적으로 쓰이는 기능을 분리하여 개발하고 실행시에 조합할수 있다.
 
@@ -75,4 +75,4 @@ Spring 프레임워크를 사용하여 개발하던중 Spring의 동작순서와
 
 ### 목차
 - Spring Framework의 동작순서와 구조(1)
-- [Spring Framework의 동작순서와 구조(2)](https://pandamun.github.io//2022-05-03-Spring-Framework%EC%9D%98-%EB%8F%99%EC%9E%91%EC%88%9C%EC%84%9C%EC%99%80-%EA%B5%AC%EC%A1%B0(2)/)
+- [Spring Framework의 동작순서와 구조(2)](https://pandamun.github.io/post/springframework(2))
