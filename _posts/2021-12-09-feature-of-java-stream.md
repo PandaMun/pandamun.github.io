@@ -8,9 +8,9 @@ category: java
 # Java Stream 정리
 
 - Stream의 정의와 특징
-- [Stream 생성방법](https://pandamun.github.io/2021-12-10-Java-Stream-%EC%83%9D%EC%84%B1%EB%B0%A9%EB%B2%95/)
-- [Stream 중간연산](https://pandamun.github.io/2021-12-11-Java-Stream%EC%9D%98-%EC%A4%91%EA%B0%84%EC%97%B0%EC%82%B0/)
-- [Stream 최종연산](https://pandamun.github.io/2021-12-12-Java-Stream%EC%9D%98-%EC%B5%9C%EC%A2%85%EC%97%B0%EC%82%B0/)
+- [Stream 생성방법](https://pandamun.github.io/post/how-to-create-java-stream)
+- [Stream 중간연산](https://pandamun.github.io/post/java-stream-middle-operations)
+- [Stream 최종연산](https://pandamun.github.io/post/java-stream-final-operations)
 
 ---
 
