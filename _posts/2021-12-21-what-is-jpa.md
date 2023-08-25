@@ -105,7 +105,7 @@ jpa.remove(member)
 
 - DB 독립성 레벨이 Read Commit이여도 애플리케이션에서 Repeatable Read 보장
     - DB Isolation level이 높아질수록 성능이 떨어집니다(DB동시성, 직렬성) 3단계에서 2단계로 줄여도 JPA 애플리케이션에서 3단계를 보장해줍니다.
-    - 이해가 안될시 참조할것 : [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io//2021-12-21-Database_Isolation_levels/)
+    - 이해가 안될시 참조할것 : [데이터베이스 독립성 레벨(Isolation Levels)](https://pandamun.github.io/post/database-isolation-levels)
 
 
 #### 트랜젝션을 지원하는 쓰기 지연
