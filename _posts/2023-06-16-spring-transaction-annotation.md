@@ -49,11 +49,11 @@ category: spring
 
 어떤 경우에 해당 기능이 사용되느냐? 바로 UncheckedException이 발생될때 입니다.
 
-> **UncheckedException?**
-UncheckedException은 RuntimeException 클래스와 그 하위 클래스를 포함하는 Exception을 의미합니다. 컴파일러가 예외 처리를 강제하지 않고, 개발자가 선택적으로 예외처리를 할수 있습니다. 즉 try-catch 블록을 사용하지 않아도 **컴파일 오류**가 발생하지 않는 에러들입니다.
+**UncheckedException?**
+> UncheckedException은 RuntimeException 클래스와 그 하위 클래스를 포함하는 Exception을 의미합니다. 컴파일러가 예외 처리를 강제하지 않고, 개발자가 선택적으로 예외처리를 할수 있습니다. 즉 try-catch 블록을 사용하지 않아도 **컴파일 오류**가 발생하지 않는 에러들입니다.
 
-> **CheckedException?**
-CheckedException은 UncheckedException과 반대로 컴파일러가 예외 처리를 강제하며, 반드시 try-catch 블록을 사용하거나 해당 메서드에서 throws문으로 상위로 예외를 던져야 합니다.
+**CheckedException?**
+> CheckedException은 UncheckedException과 반대로 컴파일러가 예외 처리를 강제하며, 반드시 try-catch 블록을 사용하거나 해당 메서드에서 throws문으로 상위로 예외를 던져야 합니다.
 
 
 여기서 UncheckedException을 롤백 대상으로 잡은 이유로는 스프링에서 데이터 엑세스 기술의 예외는 런타임 에러로 전환해서 던지기 때문입니다. 또한 해당 Exception은 예외 처리를 강제하지 않고 예측 불가능한 Exception이기 때문에 문제가 발생하면 Rollback후 개발자가 해당 문제를 빠르게 수정할수 있게 하기 위함이라고 생각합니다.
