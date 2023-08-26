@@ -2,7 +2,7 @@
 layout: post
 title: Spring으로 보는 SSE(Server-Sent Events)
 subtitle: SSE 통신의 개념과 Spring Framework에서의 사용법
-category: web
+category: spring
 ---
 
 프로젝트를 진행하면서 실시간 랭킹 데이터를 클라이언트로 보내줘야하는 상황이 생겼습니다.

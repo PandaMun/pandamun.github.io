@@ -21,6 +21,7 @@ navbar-links:
   Category:
     - java : "/category/java"
     - web : "/category/web"
+    - spring : "/category/spring"
     - jpa : "/category/jpa"
     - database : "/category/database"
     - os : "/category/os"

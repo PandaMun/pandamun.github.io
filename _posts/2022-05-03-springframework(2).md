@@ -2,7 +2,7 @@
 layout: post
 title: Spring Framework의 동작순서와 구조(2)
 subtitle: Spring Framework의 동작순서와 구조(2)
-category: web
+category: spring
 ---
 
 # Spring MVC 구조

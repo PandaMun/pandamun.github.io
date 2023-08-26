@@ -2,7 +2,7 @@
 layout: post
 title: Spring Container란?
 subtitle: Spring Container란?
-category: web
+category: spring
 ---
 
 

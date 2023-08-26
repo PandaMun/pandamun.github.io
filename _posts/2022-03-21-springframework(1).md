@@ -2,7 +2,7 @@
 layout: post
 title: Spring Framework의 동작순서와 구조(1)
 subtitle: Spring Framework의 동작순서와 구조(1)
-category: web
+category: spring
 ---
 
 Spring 프레임워크를 사용하여 개발하던중 Spring의 동작순서와 구조에 대하여 명확하게 정리하고 싶어서 작성하였습니다.

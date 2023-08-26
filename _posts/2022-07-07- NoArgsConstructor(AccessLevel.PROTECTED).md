@@ -2,7 +2,7 @@
 layout: post
 title: NoArgsContructor(AccessLevel.PROTECTED)에 대해서
 subtitle: Lombok 라이브러리가 제공하는 생성자 어노테이션의 종류와 종류중 하나인 NoArgsConstructor의 PROTECTED AccessLevel을 쓰는 상황과 이유에 대해서 알아보자
-category: web
+category: spring
 ---
 
 NoargsConsturctor(AcessLevel)에 대해 알기전 생성자 어노테이션에는 무엇이 있으며 어떠한 역활이 있는지 확인하고 넘어가겠습니다.

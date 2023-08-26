@@ -2,7 +2,7 @@
 layout: post
 title: Spring 코드로 보는 AOP(Aspect Oriented Programming)
 subtitle: AOP의 개념과 사용법
-category: web
+category: spring
 ---
 
 ## AOP란?
