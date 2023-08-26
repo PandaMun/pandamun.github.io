@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 한눈에 정리하는 네트워크 지식
-subtitle: 면접 준비를 위해 간단한 네트워크 지식을 압축해서 정리해봤습니다.
-category: knowledge
+title: @Transactional의 개념과 간단 사용법
+subtitle: Transaction 어노테이션을 사용하는 방법에 대해 알아보자.
+category: spring
 ---
 
 그동안 프로젝트와 취업 준비등으로 너무 바빠 블로그에 글을 자주 포스팅해야지 하면서도 제대로 운영을 하지 못하였지만 앞으로는 적어도 3주에 게시글 한개씩은 포스팅할 예정이다.
