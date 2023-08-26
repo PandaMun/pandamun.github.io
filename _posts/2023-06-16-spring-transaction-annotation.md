@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "@Transactional"의 개념과 간단 사용법
+title: '@Transactional'의 개념과 간단 사용법
 subtitle: Transaction 어노테이션을 사용하는 방법에 대해 알아보자.
 category: spring
 ---
