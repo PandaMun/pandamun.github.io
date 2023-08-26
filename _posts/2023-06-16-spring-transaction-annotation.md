@@ -16,6 +16,8 @@ category: spring
 
 ## Transaction이란?
 
+---
+
 트랜잭션이란, 데이터베이스의 상태를 변화시키기 위해 수행되는 작업의 단위입니다.
 
 몇몇 사람들이 오해하는것이 트랜잭션이 쿼리문 하나를 의미하는것이라고 생각하는것이다.
@@ -30,6 +32,8 @@ category: spring
 
 ## @Transactional의 역할
 
+---
+
 @Transactional이라는 annotation이 붙게 되면 Spring은 포인트 컷의 대상으로 자동 등록하고 트랜잭션 관리 대상이된다.
 
 > 여기서 포인트컷 대상으로 자동 등록된다는 이야기는 해당 부분에 부가적인 기능을 정의한 Advice가 결합되어 새로운 프록시 객체가 생성되어 호출된다는 의미이다.
@@ -39,6 +43,8 @@ category: spring
 [Spring 코드로 보는 AOP(Aspect Oriented Programming)](https://pandamun.github.io/post/AOP(Aspect-Oriented-Programming)-spring)
 
 ### Transaction의 커밋과 롤백
+
+---
 
 @Transaction을 사용하게 되면  커밋과 롤백 기능을 제공합니다.
 
@@ -54,6 +60,8 @@ CheckedException은 UncheckedException과 반대로 컴파일러가 예외 처�
 여기서 UncheckedException을 롤백 대상으로 잡은 이유로는 스프링에서 데이터 엑세스 기술의 예외는 런타임 에러로 전환해서 던지기 때문입니다. 또한 해당 Exception은 예외 처리를 강제하지 않고 예측 불가능한 Exception이기 때문에 문제가 발생하면 Rollback후 개발자가 해당 문제를 빠르게 수정할수 있게 하기 위함이라고 생각합니다.
 
 ### 트랜잭션 Isolation Level 설정
+
+---
 
 ```java
 @Service
@@ -76,6 +84,8 @@ public class TransactionalExampleService {
 [데이터 독립성 레벨(Isolation Levels)이란?](https://pandamun.github.io/post/database-isolation-levels)
 
 ### 트랜잭션의 전파 속성 설정
+
+---
 
 트랜잭션의 시작과 종료는 Connection 객체로 이루어집니다
 
@@ -168,6 +178,8 @@ private DefaultTransactionDefinition createTransactionDefinition() {
 ```
 
 ### 트랜잭션 전파속성
+
+---
 
 Spring에서 제공하는 선언적 트랜잭션(@Transactional)은 여러 트랜잭션을 묶어서 커다란 하나의 트랜잭션 경계를 만들수 있습니다.
 
