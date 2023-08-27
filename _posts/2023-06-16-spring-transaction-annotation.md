@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 간단하게 @Transactional에 대한 핵심원리와 개념 그리고 사용방법에 대해 알아보자
+title: 간단하게 @Transactional에 대한 핵심원리와 사용방법에 대해 알아보자
 subtitle: Transaction 어노테이션을 사용하는 방법에 대해 알아보자.
 author: pandamun
 category: spring
