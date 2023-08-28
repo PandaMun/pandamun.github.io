@@ -181,12 +181,12 @@ private DefaultTransactionDefinition createTransactionDefinition() {
 
 > Spring에서 PlatformTransactionManager은 다양한 종류의 DataSource와 TransactionManager을 지원하기위해 설계된 최상위 인터페이스입니다.
 아래 이미지를 보게 되면 JPA(Java Persistence API)나 JDBC(Java Database Connectivity)를 사용하기 위한 다양한 PlatformTransactionManager 구현체들이 있는걸 확인할수 있습니다.
-> 이처럼 Spring에서 @Transactional 을 사용하게되면 필요한 PlatformTransactionManager 구현체가 해당 DataSource에 맞게 Dependency Injection을 통해 주입되어 사용됩니다.
-즉 @Transactional은 코드에서 트랜잭션 관련 로직을  분리하고 필요한 트랜잭션 매니저를 선택할수 있도록 도와줍니다
-위와 같은 개념은 PSA(Portable Service Abstraction)입니다. PSA는 Spring의 핵심원리중 하나로 다양한 서비스에 접근하는 방법을 추상화하여 일관된 방식으로 사용할수 있도록 돕습니다.
-
 
 ![spring-platform-transaction-manager.png](/img/post/spring-platform-transaction-manager.png)
+
+이처럼 Spring에서 @Transactional 을 사용하게되면 필요한 PlatformTransactionManager 구현체가 해당 DataSource에 맞게 Dependency Injection을 통해 주입되어 사용됩니다.
+즉 @Transactional은 코드에서 트랜잭션 관련 로직을 분리하고 필요한 트랜잭션 매니저를 선택할수 있도록 도와줍니다
+위와 같은 개념은 PSA(Portable Service Abstraction)입니다. PSA는 Spring의 핵심원리중 하나로 다양한 서비스에 접근하는 방법을 추상화하여 일관된 방식으로 사용할수 있도록 돕습니다.
 
 
 ### 트랜잭션 전파속성
