@@ -89,7 +89,7 @@ public V put(K key, V value) {
             if (tab == null || (n = tab.length) == 0)
                 tab = initTable();
 
-						// 여기서 key의 hash code에 대한 버킷이 비어있다면 key-value쌍을 추가합니다.
+				// 여기서 key의 hash code에 대한 버킷이 비어있다면 key-value쌍을 추가합니다.
             else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
                 if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))
                     break;                   // no lock when adding to empty bin
@@ -140,7 +140,7 @@ public V put(K key, V value) {
                     }
                 }
                 if (binCount != 0) {
-// 해시버킷에 저장된 노드의수가 일정 수준 이상 많아지면 해당 해시버킷을 이진트리로 변환합니다
+                // 해시버킷에 저장된 노드의수가 일정 수준 이상 많아지면 해당 해시버킷을 이진트리로 변환합니다
                     if (binCount >= TREEIFY_THRESHOLD)
                         treeifyBin(tab, i);
                     if (oldVal != null)
