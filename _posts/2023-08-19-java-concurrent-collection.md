@@ -88,8 +88,7 @@ public V put(K key, V value) {
             Node<K,V> f; int n, i, fh; K fk; V fv;
             if (tab == null || (n = tab.length) == 0)
                 tab = initTable();
-
-				// 여기서 key의 hash code에 대한 버킷이 비어있다면 key-value쌍을 추가합니다.
+                // 여기서 key의 hash code에 대한 버킷이 비어있다면 key-value쌍을 추가합니다.
             else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
                 if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))
                     break;                   // no lock when adding to empty bin
