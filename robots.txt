@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: [https://pandamun.github.io/sitemap.xml](https://pandamun.github.io/sitemap.xml)
+Sitemap: https://pandamun.github.io/sitemap.xml
